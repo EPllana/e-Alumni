@@ -5,9 +5,9 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#features', label: 'Features' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#home', label: 'Ballina' },
+    { href: '#features', label: 'Veçoritë' },
+    { href: '#contact', label: 'Kontakti' },
   ];
 
   const handleScrollTo = (e: React.MouseEvent, href: string) => {
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
               {link.label}
             </a>
           ))}
-           <a href="#how-it-works" onClick={(e) => handleScrollTo(e, '#how-it-works')} className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">Login/Register</a>
+           <a href="#how-it-works" onClick={(e) => handleScrollTo(e, '#how-it-works')} className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">Hyr/Regjistrohu</a>
         </nav>
         <div className="hidden md:block">
            <motion.button 
