@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
                         className="text-lg md:text-xl text-gray-300 mb-10"
                         variants={itemVariants}
                     >
-                        Një platformë digjitale që mundëson rrjetëzim, ndërveprim dhe zhvillim profesional mes alumni dhe universitetit.
+                        Merr pjesë, ndaj eksperienca dhe krijo mundësi të reja – bëhu pjesë e E-Alumni sot!
                     </motion.p>
                     <motion.div variants={itemVariants}>
                        <motion.button
