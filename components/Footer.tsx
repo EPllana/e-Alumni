@@ -20,10 +20,9 @@ const ContactItem: React.FC<{ icon: React.ReactNode; text: string; href?: string
     return <Wrapper {...props}>{content}</Wrapper>;
 };
 
-
 const Footer: React.FC = () => {
     return (
-        <footer id="contact" className="bg-black/20 border-t border-white/10 mt-20 scroll-mt-20">
+        <footer className="bg-black/20 border-t border-white/10 mt-20">
             <div className="container mx-auto px-6 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
                     
@@ -38,15 +37,26 @@ const Footer: React.FC = () => {
                         </p>
                     </div>
 
-                    {/* Column 2: Quick Links */}
-                    <div>
-                        <h3 className="text-lg font-semibold text-white mb-4">Lidhje të Shpejta</h3>
-                        <nav className="flex flex-col space-y-3">
-                            <a href="#about" className="text-gray-400 hover:text-cyan-400 transition-colors">About</a>
-                            <a href="#contact" className="text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
-                            <a href="#privacy" className="text-gray-400 hover:text-cyan-400 transition-colors">Privacy</a>
-                            <a href="#terms" className="text-gray-400 hover:text-cyan-400 transition-colors">Terms</a>
-                        </nav>
+                    {/* Column 2: Social Media */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <h3 className="text-lg font-semibold text-white mb-4">Na Ndiqni</h3>
+                        <div className="flex justify-center md:justify-start space-x-6">
+                            <SocialIcon href="https://www.linkedin.com/school/uibm/">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd"/>
+                                </svg>
+                            </SocialIcon>
+                            <SocialIcon href="https://www.facebook.com/uibm02">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"/>
+                                </svg>
+                            </SocialIcon>
+                            <SocialIcon href="https://www.instagram.com/uibm_net/">
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.333 7.834c-.183.05-.37.076-.56.076-1.58 0-2.86-1.28-2.86-2.86 0-.19.026-.376.076-.56.407-.037.822-.05 1.244-.05s.837.013 1.244.05c.05.184.076.37.076.56 0 1.58-1.28 2.86-2.86 2.86zm-1.166 2.533c-2.484 0-4.5 2.016-4.5 4.5s2.016 4.5 4.5 4.5 4.5-2.016 4.5-4.5-2.016-4.5-4.5-4.5zm0 7.333c-1.564 0-2.833-1.269-2.833-2.833s1.269-2.833 2.833-2.833 2.833 1.269 2.833 2.833-1.269 2.833-2.833 2.833z" clipRule="evenodd"/>
+                                </svg>
+                            </SocialIcon>
+                        </div>
                     </div>
 
                     {/* Column 3: Contact Info */}
@@ -71,20 +81,9 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar: Copyright and Socials */}
-                <div className="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center text-center">
-                    <p className="text-gray-500 mb-4 sm:mb-0">&copy; 2025 E-Alumni. All rights reserved.</p>
-                    <div className="flex justify-center space-x-6">
-                        <SocialIcon href="https://www.linkedin.com/school/uibm/">
-                            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd"/></svg>
-                        </SocialIcon>
-                        <SocialIcon href="https://www.facebook.com/uibm02">
-                            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"/></svg>
-                        </SocialIcon>
-                        <SocialIcon href="https://www.instagram.com/uibm_net/">
-                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.333 7.834c-.183.05-.37.076-.56.076-1.58 0-2.86-1.28-2.86-2.86 0-.19.026-.376.076-.56.407-.037.822-.05 1.244-.05s.837.013 1.244.05c.05.184.076.37.076.56 0 1.58-1.28 2.86-2.86 2.86zm-1.166 2.533c-2.484 0-4.5 2.016-4.5 4.5s2.016 4.5 4.5 4.5 4.5-2.016 4.5-4.5-2.016-4.5-4.5-4.5zm0 7.333c-1.564 0-2.833-1.269-2.833-2.833s1.269-2.833 2.833-2.833 2.833 1.269 2.833 2.833-1.269 2.833-2.833 2.833z" clipRule="evenodd"/></svg>
-                        </SocialIcon>
-                    </div>
+                {/* Bottom Bar: Copyright only */}
+                <div className="mt-10 pt-8 border-t border-white/10 text-center">
+                    <p className="text-gray-500">&copy; 2025 E-Alumni. All rights reserved.</p>
                 </div>
             </div>
         </footer>
