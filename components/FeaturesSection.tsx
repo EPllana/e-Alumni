@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { BriefcaseIcon ,ChatAlt2Icon} from '@heroicons/react/outline';
+
+
 
 const FeatureCard: React.FC<{ icon: React.ReactNode; title: string; description: string; }> = ({ icon, title, description }) => (
     <motion.div 
@@ -43,27 +46,15 @@ const features = [
     description: "Lidhu me ish-studentë dhe profesionistë të fushës për të krijuar lidhje të vlefshme.",
   },
   {
-    // Mundësi të Reja → ikonë portofoli / punësimi
-    icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-          d="M12 12v9m0 0h9m-9 0H3m9-9V3m0 9h9m-9 0H3" />
-      </svg>
-    ),
-    title: "Mundësi të Reja",
-    description: "Zbulo oferta pune, internship-e dhe projekte bashkëpunimi brenda komunitetit.",
-  },
-  {
-    // Ndërveprim dhe Mbështetje → ikonë mesazhi / bisedash
-    icon: (
-      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-          d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.86 9.86 0 01-4.255-.949L3 20l1.395-3.72A8.963 8.963 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-      </svg>
-    ),
-    title: "Ndërveprim dhe Mbështetje",
-    description: "Ndaj përvoja, merr këshilla dhe mbështetje nga alumni të tjerë.",
-  },
+  icon: <BriefcaseIcon className="w-12 h-12 text-blue-500" />,
+  title: "Mundësi të Reja",
+  description: "Zbulo oferta pune, internship-e dhe projekte bashkëpunimi brenda komunitetit.",
+},
+ {
+  icon: <ChatAlt2Icon className="w-12 h-12 text-green-500" />,
+  title: "Ndërveprim dhe Mbështetje",
+  description: "Ndaj përvoja, merr këshilla dhe mbështetje nga alumni të tjerë.",
+},
   {
     // Komunikim në Kohë Reale → ikonë mesazhi / chat real-time
     icon: (
