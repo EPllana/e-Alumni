@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
                         className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6"
                         variants={itemVariants}
                     >
-                        E-Alumni – Lidh të kaluarën me të ardhmen e universitetit
+                        E-Alumni – Hap dyert e rrjetit tënd profesional
                     </motion.h1>
                     <motion.p 
                         className="text-lg md:text-xl text-gray-300 mb-10"
