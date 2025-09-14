@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa';
+
 
 const SocialIcon: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transform transition-transform duration-300 hover:scale-125">
@@ -39,7 +41,7 @@ const Footer: React.FC = () => {
 
                     {/* Column 2: Social Media */}
                     <div className="flex flex-col items-center md:items-start">
-                        <h3 className="text-lg font-semibold text-white mb-4">Na Ndiqni</h3>
+                        <h3 className="text-lg font-semibold text-white mb-4">Rrjeti Ynë</h3>
                         <div className="flex justify-center md:justify-start space-x-6">
                             <SocialIcon href="https://www.linkedin.com/school/uibm/">
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,9 +54,10 @@ const Footer: React.FC = () => {
                                 </svg>
                             </SocialIcon>
                             <SocialIcon href="https://www.instagram.com/uibm_net/">
-                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.333 7.834c-.183.05-.37.076-.56.076-1.58 0-2.86-1.28-2.86-2.86 0-.19.026-.376.076-.56.407-.037.822-.05 1.244-.05s.837.013 1.244.05c.05.184.076.37.076.56 0 1.58-1.28 2.86-2.86 2.86zm-1.166 2.533c-2.484 0-4.5 2.016-4.5 4.5s2.016 4.5 4.5 4.5 4.5-2.016 4.5-4.5-2.016-4.5-4.5-4.5zm0 7.333c-1.564 0-2.833-1.269-2.833-2.833s1.269-2.833 2.833-2.833 2.833 1.269 2.833 2.833-1.269 2.833-2.833 2.833z" clipRule="evenodd"/>
-                                </svg>
+                               <svg className="w-6 h-6 text-gray-400 hover:text-cyan-400" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M7.75 2h8.5C19.217 2 22 4.783 22 7.75v8.5C22 19.217 19.217 22 16.25 22h-8.5C4.783 22 2 19.217 2 16.25v-8.5C2 4.783 4.783 2 7.75 2zm4.25 5.75a4.25 4.25 0 100 8.5 4.25 4.25 0 000-8.5zm4.5-.75a1 1 0 11-2 0 1 1 0 012 0z"/>
+</svg>
+
                             </SocialIcon>
                         </div>
                     </div>
