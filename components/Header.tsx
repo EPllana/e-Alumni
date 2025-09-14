@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { href: '#home', label: 'Ballina' },
-    { href: '#features', label: 'Veçoritë' },
+    { href: '#features', label: 'Shërbimet' },
     { href: '#contact', label: 'Kontakti' },
   ];
 
