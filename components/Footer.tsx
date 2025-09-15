@@ -24,7 +24,7 @@ const ContactItem: React.FC<{ icon: React.ReactNode; text: string; href?: string
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-black/20 border-t border-white/10 mt-20">
+        <footer  id="contact" className="bg-black/20 border-t border-white/10 mt-20">
             <div className="container mx-auto px-6 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
                     
