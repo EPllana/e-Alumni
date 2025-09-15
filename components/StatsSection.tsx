@@ -68,16 +68,16 @@ const StatsSection: React.FC = () => {
                         <blockquote className="text-xl italic text-gray-300">
                             "E-Alumni ka ndihmuar në rigjallërimin e lidhjeve mes alumnëve dhe krijimin e mundësive të reja profesionale"
                         </blockquote>
-                        <p className="mt-4 font-semibold text-cyan-400">- Alumni aktiv</p>
+                        <p className="mt-4 font-semibold text-cyan-400">- Ernis Pllana</p>
                     </motion.div>
                     <motion.div variants={itemVariants} className="grid grid-cols-2 gap-8">
                          <div className="flex flex-col items-center justify-center">
-                             <AnimatedCounter end={50} suffix="+" />
-                             <p className="text-gray-400 mt-2">Alumni Aktivë / Javë</p>
+                             <AnimatedCounter end={100} suffix="+" />
+                             <p className="text-gray-400 mt-2">Alumni të regjistruar</p>
                          </div>
                          <div className="flex flex-col items-center justify-center">
-                             <AnimatedCounter end={100} suffix="+" />
-                             <p className="text-gray-400 mt-2">Mesazhe / Ditë</p>
+                             <AnimatedCounter end={5000} suffix="+" />
+                             <p className="text-gray-400 mt-2">Mesazhe të shkëmbyera</p>
                          </div>
                     </motion.div>
                 </div>
