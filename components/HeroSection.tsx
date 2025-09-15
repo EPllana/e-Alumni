@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
                 <motion.div className="mt-16" variants={itemVariants}>
                     <div className="relative mx-auto border-4 border-gray-700 rounded-xl shadow-2xl bg-black/20 backdrop-blur-md" style={{maxWidth: '1000px'}}>
                         <img 
-                            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fschool%2Fuibm%2F&psig=AOvVaw12NT1CeV6XwgxwNsDQSTm0&ust=1758028017459000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwio_pPt6tqPAxWzSvEDHZlGBK8QjRx6BAgAEBo" 
+                            src="https://media.licdn.com/dms/image/v2/C4E1BAQH2fRE0h5zJyg/company-background_10000/company-background_10000/0/1639098110003/uibm_cover?e=2147483647&v=beta&t=sGRYV6_lTEgkl031G63baORyTjEnoQKYt9KZ1w-TTu4" 
                             alt="E-Alumni Platform Showcase" 
                             className="rounded-lg opacity-80"
                         />
