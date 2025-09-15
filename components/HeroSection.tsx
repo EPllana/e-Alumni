@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
                 <motion.div className="mt-16" variants={itemVariants}>
                     <div className="relative mx-auto border-4 border-gray-700 rounded-xl shadow-2xl bg-black/20 backdrop-blur-md" style={{maxWidth: '1000px'}}>
                         <img 
-                            src="http://umib.net/wp-content/uploads/2022/09/DSC06262-scaled.jpg" 
+                            src="https://umib.net/wp-content/uploads/2021/05/student2-scaled.jpg" 
                             alt="E-Alumni Platform Showcase" 
                             className="rounded-lg opacity-80"
                         />
